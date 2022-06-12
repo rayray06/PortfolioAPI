@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Portfolio.Object.BDD;
 
-namespace Portfolio.Object.BDD
+namespace Portfolio
 {
     public class EducationTable : BaseEntity
     {

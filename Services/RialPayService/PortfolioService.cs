@@ -13,7 +13,6 @@ using Microsoft.Extensions.Options;
 using Microsoft.Extensions.DependencyInjection;
 using System.IdentityModel.Tokens.Jwt;
 using Portfolio.Data.AccessObjects;
-using Portfolio.Object.BDD;
 using Portfolio.Route;
 using System.Text;
 using System.Collections.Generic;

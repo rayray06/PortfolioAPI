@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Portfolio;
-using Portfolio.Object.BDD;
 using Portfolio.Route;
 using Portfolio.AccessLayer;
 using Portfolio.Settings;
@@ -22,9 +21,9 @@ using System.Security.Claims;
 
 namespace Portfolio.AccessLayer
 {
-    public class SkillAccessLayer : AccessLayer<PortfolioContext, SkillTable>
+    public class SkillAccessTableLayer : AccessLayer<PortfolioContext, SkillTable>
     {
-        public SkillAccessLayer(
+        public SkillAccessTableLayer(
             PortfolioContext myDbContext
             ) : base(myDbContext) { }
 

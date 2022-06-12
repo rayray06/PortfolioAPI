@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Portfolio.Object.BDD;
+using Portfolio;
 
 namespace Portfolio.Object.DTO
 {

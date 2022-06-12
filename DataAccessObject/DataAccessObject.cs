@@ -107,7 +107,7 @@ namespace Portfolio.Data.AccessObjects
             try 
             { 
                 
-                var  accessLayerNameSpace = $"RialPayAPI.AccessLayer";//$"RialPayAPI.Data.AccessLayers";
+                var  accessLayerNameSpace = $"Portfolio.AccessLayer";//$"RialPayAPI.Data.AccessLayers";
                 var  entityAccessLayer    = typeof(T).Name;
                 var  charIndex            = entityAccessLayer.IndexOf('`');
 
@@ -120,7 +120,7 @@ namespace Portfolio.Data.AccessObjects
 
                 entityAccessLayer = string.Concat(entityAccessLayer, "AccessLayer");
 
-                
+                Console.WriteLine($"{accessLayerNameSpace}.{entityAccessLayer}");
                 Type accessLayerType = Type.GetType($"{accessLayerNameSpace}.{entityAccessLayer}");
                 
                 
@@ -158,9 +158,10 @@ namespace Portfolio.Data.AccessObjects
         private DbContext GetContext(
             string lastNamespace
         ) {
+            Console.WriteLine(lastNamespace);
             return lastNamespace switch
             {
-                "RialPayAPI" => _myDbContext,
+                "Portfolio" => _myDbContext,
 
                 _ => throw new NotImplementedException("No context found from entity"),
             };

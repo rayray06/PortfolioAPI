@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Portfolio.Object.BDD
+namespace Portfolio
 {
     public class SkillTable: BaseEntity
     {

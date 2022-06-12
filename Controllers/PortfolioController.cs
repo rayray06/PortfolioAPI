@@ -25,7 +25,9 @@ namespace API.Controllers
             _myService = myService;
             _logger = logger;
         }
-
+        
+        [HttpGet,
+        Route(Portfolio.Route.RialPayRoute.API.Skills.LIST)]
         public PortfolioResponseList<SkillCategoryDTO> FetchSkillsList()
         {
            return new PortfolioResponseList<SkillCategoryDTO>(_myService.FetchSkills().ConvertAll((cs) => new SkillCategoryDTO(cs)));

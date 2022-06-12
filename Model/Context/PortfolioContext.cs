@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Portfolio;
-using Portfolio.Object.BDD;
 using Microsoft.Extensions.Options;
 namespace Portfolio
 {
