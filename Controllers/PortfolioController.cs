@@ -33,5 +33,20 @@ namespace API.Controllers
            return new PortfolioResponseList<SkillCategoryDTO>(_myService.FetchSkills().ConvertAll((cs) => new SkillCategoryDTO(cs)));
         }
 
+        [HttpGet,
+        Route(Portfolio.Route.RialPayRoute.API.Education.LIST)]
+        public PortfolioResponseList<EducationDTO> FetchEducationList()
+        {
+            return new PortfolioResponseList<EducationDTO>(_myService.FetchEducation().ConvertAll((e) => new EducationDTO(e)));
+        }
+
+        [HttpGet,
+        Route(Portfolio.Route.RialPayRoute.API.Experience.LIST)]
+        public PortfolioResponseList<ExperienceDTO> FetchExperienceList()
+        {
+            return new PortfolioResponseList<ExperienceDTO>(_myService.FetchExperience().ConvertAll((e) => new ExperienceDTO(e)));
+        }
+
+
     }
 }

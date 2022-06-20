@@ -10,18 +10,24 @@ namespace Portfolio.Object.DTO
         {
             this.Title = baseObject.Title;
             this.Company = baseObject.Company;
-            this.StartDate = baseObject.StartDate;
-            this.EndDate = baseObject.EndDate;
+            this.StartDate = baseObject.StartDate.ToString("MM/yyyy");
+            this.EndDate = baseObject.EndDate.ToString("MM/yyyy");
             this.Description = baseObject.Description;
             this.GitLink = baseObject.GitLink;
-            this.Skills = baseObject.Skills.ConvertAll((s) => new SkillDTO(s));
-            
+            if (baseObject.Skills.Count > 0)
+            {
+                this.Skills = baseObject.Skills.ConvertAll((s) => new SkillDTO(s));
+            }
+            else 
+            {
+                this.Skills = new List<SkillDTO>();
+            }
         }
 
         public string Title { get; set; }
         public string Company { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public string StartDate { get; set; }
+        public string EndDate { get; set; }
         public string Description { get; set; }
         public string GitLink { get; set; }
         public List<SkillDTO> Skills { get; set; }

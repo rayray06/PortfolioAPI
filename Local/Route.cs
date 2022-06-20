@@ -13,6 +13,18 @@ namespace Portfolio.Route
                 private const string BASESKILL = "SKILL/";
                 public const string LIST = BASESKILL+"LIST";
             }
+
+            public static class Education
+            {
+                private const string BASESKILL = "EDUCATION/";
+                public const string LIST = BASESKILL + "LIST";
+            }
+
+            public static class Experience
+            {
+                private const string BASESKILL = "EXPERIENCE/";
+                public const string LIST = BASESKILL + "LIST";
+            }
         }
 
     }

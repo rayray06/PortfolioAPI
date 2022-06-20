@@ -38,6 +38,16 @@ namespace Portfolio.Services
             return _dataAccessObject.List<SkillCategoryTable>();
         }
 
+        public List<EducationTable> FetchEducation()
+        {
+            return _dataAccessObject.List<EducationTable>();
+        }
+
+        public List<ExperienceTable> FetchExperience()
+        {
+            return _dataAccessObject.List<ExperienceTable>();
+        }
+
         private static DateTime _convertFromUnixTimestamp(double timestamp)
         {
             DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);

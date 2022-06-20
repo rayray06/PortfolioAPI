@@ -7,6 +7,8 @@ namespace Portfolio.Services
 
     public interface IPortfolioService
     {
+        public List<EducationTable> FetchEducation();
+        public List<ExperienceTable> FetchExperience();
         public List<SkillCategoryTable> FetchSkills();
         
     }
