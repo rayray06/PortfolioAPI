@@ -20,6 +20,7 @@ using Portfolio;
 using Portfolio.Settings;
 using Portfolio.Services;
 using Portfolio.Data.AccessObjects;
+using Microsoft.AspNetCore.Authentication.Certificate;
 
 namespace Portfolio
 {
@@ -46,6 +47,8 @@ namespace Portfolio
                                     builder.AllowAnyHeader();
                                 });
             });
+
+            services.AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme).AddCertificate();
 
             services.AddControllers();
 
