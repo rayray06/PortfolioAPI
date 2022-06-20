@@ -75,7 +75,6 @@ namespace Portfolio
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Portfolio v1"));
             }else{
                 app.UseExceptionHandler("/Error");
-                app.UseHttpsRedirection();
             }
 
 

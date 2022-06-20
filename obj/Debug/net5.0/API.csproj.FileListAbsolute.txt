@@ -66,3 +66,4 @@ C:\Users\ray-h\Documents\Git\Portfolio\API\obj\Debug\net5.0\API.dll
 C:\Users\ray-h\Documents\Git\Portfolio\API\obj\Debug\net5.0\ref\API.dll
 C:\Users\ray-h\Documents\Git\Portfolio\API\obj\Debug\net5.0\API.pdb
 C:\Users\ray-h\Documents\Git\Portfolio\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Users\ray-h\Documents\Git\Portfolio\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Certificate.dll
