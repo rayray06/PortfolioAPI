@@ -7,7 +7,6 @@ C:\Users\ray-h\Documents\Git\Portfolio\API\obj\Debug\net5.0\API.MvcApplicationPa
 C:\Users\ray-h\Documents\Git\Portfolio\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ray-h\Documents\Git\Portfolio\API\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\ray-h\Documents\Git\Portfolio\API\bin\Debug\net5.0\appsettings.json
-C:\Users\ray-h\Documents\Git\Portfolio\API\bin\Debug\net5.0\Properties copy\launchSettings.json
 C:\Users\ray-h\Documents\Git\Portfolio\API\bin\Debug\net5.0\API.exe
 C:\Users\ray-h\Documents\Git\Portfolio\API\bin\Debug\net5.0\API.deps.json
 C:\Users\ray-h\Documents\Git\Portfolio\API\bin\Debug\net5.0\API.runtimeconfig.json
